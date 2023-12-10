@@ -2781,8 +2781,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isPlayerTurn: 0
-  _gridSize: 3
-  aiState: 1
   _xPrefab: {fileID: 7414302633889650939, guid: a450fd114cd7d1a478caad21517a2ac9,
     type: 3}
   _oPrefab: {fileID: 7864686030223180920, guid: f4dc0bc95f6576a40a4d10ac0b905c6a,
@@ -2802,11 +2800,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onPlayerWin:
+  onGameOver:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1570885029}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -2818,7 +2816,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1935952292}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: EndMessage, Assembly-CSharp
         m_MethodName: OnGameEnded
         m_Mode: 0
         m_Arguments:
@@ -2827,7 +2825,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!4 &2053529901
 Transform:
