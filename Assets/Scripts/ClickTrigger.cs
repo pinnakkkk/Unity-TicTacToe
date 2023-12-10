@@ -23,10 +23,10 @@ public class ClickTrigger : MonoBehaviour
 
 		_ai.onGameStarted.AddListener(AddReference);
 		_ai.onGameStarted.AddListener(() => SetInputEndabled(true));
-		_ai.onPlayerWin.AddListener((win) => SetInputEndabled(false));
+		_ai.onGameOver.AddListener((win) => SetInputEndabled(false));
 	}
 
-	private void SetInputEndabled(bool val){
+	public void SetInputEndabled(bool val){
 		canClick = val;
 	}
 
